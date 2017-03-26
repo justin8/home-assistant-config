@@ -27,10 +27,10 @@ history:
 logbook:
 sun:
 
-sensor: !include sensors.yaml
-shell_command: !include shell_commands.yaml
-script: !include scripts.yaml
-device_tracker: !include device_trackers.yaml
-media_player: !include media_players.yaml
-light: !include lights.yaml
-automation: !include automation.yaml
+device_tracker: !include misc/device_trackers.yaml
+shell_command: !include misc/shell_commands.yaml
+media_player: !include misc/media_players.yaml
+sensor: !include_dir_list sensors/
+script: !include_dir_merge_named scripts/
+light: !include_dir_list lights/
+automation: !include_dir_list automations/

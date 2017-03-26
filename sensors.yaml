@@ -1,8 +1,0 @@
-- platform: bom
-  zone_id: IDQ60901
-  wmo_id: 94578
-  monitored_conditions:
-      - name
-      - cloud
-      - air_temp
-      - weather
