@@ -1,0 +1,5 @@
+- platform: samsungtv
+  friendly_name: TV
+  host: 192.168.1.223
+  mac: 5c:49:7d:9a:6f:5d
+  port: 8001

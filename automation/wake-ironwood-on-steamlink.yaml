@@ -1,0 +1,7 @@
+alias: Wake Ironwood on Steamlink
+trigger:
+    platform: state
+    entity_id: device_tracker.steamlink
+    state: home
+action:
+    service: shell_command.wake_ironwood

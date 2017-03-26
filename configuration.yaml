@@ -1,0 +1,36 @@
+homeassistant:
+    name: Home
+    latitude: !secret latitude_loc_home
+    longitude: !secret longitude_loc_home
+    elevation: 20
+    unit_system: metric
+    time_zone: Australia/Brisbane
+    customize:
+        media_player.samsung_tv_remote:
+            emulated_hue: true
+            emulated_hue_name: TV
+        group.all_lights:
+            emulated_hue: true
+
+emulated_hue:
+    expose_by_default: true
+    exposed_domains:
+        - light
+
+ifttt:
+    key: !secret ifttt_key
+
+frontend:
+http:
+conversation:
+history:
+logbook:
+sun:
+
+sensor: !include sensors.yaml
+shell_command: !include shell_commands.yaml
+script: !include scripts.yaml
+device_tracker: !include device_trackers.yaml
+media_player: !include media_players.yaml
+light: !include lights.yaml
+automation: !include automation.yaml
