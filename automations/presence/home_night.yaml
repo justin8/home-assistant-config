@@ -1,0 +1,26 @@
+alias: Home Night
+initial_state: True
+hide_entity: False
+trigger:
+    - platform: state
+      entity_id: device_tracker.justin
+      from: "not_home"
+      to: "home"
+    - platform: state
+      entity_id: device_tracker.celeste
+      from: "not_home"
+      to: "home"
+condition:
+    condition: and
+    conditions:
+        - condition: state
+          entity_id: sun.sun
+          state: "below_horizon"
+action:
+    - service: light.turn_on
+      data:
+          entity_id:
+              - light.lounge
+          brightness: 255
+          color_temp: 154
+          rgb_color: [255,255,255]

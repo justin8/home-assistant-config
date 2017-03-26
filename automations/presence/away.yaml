@@ -1,0 +1,12 @@
+alias: Away
+initial_state: True
+hide_entity: False
+trigger:
+    - platform: state
+      entity_id: group.all_devices
+      from: "home"
+      to: "not_home"
+action:
+    - service: light.turn_off
+      data:
+          entity_id: group.all_lights
