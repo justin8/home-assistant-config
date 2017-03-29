@@ -23,6 +23,9 @@ emulated_hue:
 ifttt:
     key: !secret ifttt_key
 
+recorder:
+    purge_days: 28
+
 frontend:
 http:
 conversation:
