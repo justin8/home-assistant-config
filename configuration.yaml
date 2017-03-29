@@ -25,6 +25,11 @@ ifttt:
 
 recorder:
     purge_days: 28
+logger:
+    default: warning
+    logs:
+        homeassistant.components.device_tracker.mqtt: debug
+
 
 frontend:
 http:
