@@ -29,6 +29,7 @@ conversation:
 history:
 logbook:
 sun:
+mqtt:
 
 device_tracker: !include misc/device_trackers.yaml
 shell_command: !include misc/shell_commands.yaml
