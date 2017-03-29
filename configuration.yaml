@@ -23,24 +23,23 @@ emulated_hue:
 ifttt:
     key: !secret ifttt_key
 
+frontend:
+conversation:
+history:
+logbook:
+sun:
+http:
+    api_password: !secret api_password
+mqtt:
+    protocol: 3.1
+    discovery: true
+    discovery_prefix: homeassistant
 recorder:
     purge_days: 28
 logger:
     default: warning
     logs:
         homeassistant.components.device_tracker.mqtt: debug
-
-
-frontend:
-http:
-    api_password: !secret api_password
-conversation:
-history:
-logbook:
-sun:
-mqtt:
-    discovery: true
-    discovery_prefix: homeassistant
 
 
 device_tracker: !include misc/device_trackers.yaml
