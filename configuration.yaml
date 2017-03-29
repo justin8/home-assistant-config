@@ -1,8 +1,8 @@
 homeassistant:
     name: Home
-    latitude: !secret latitude_loc_home
-    longitude: !secret longitude_loc_home
-    elevation: 20
+    latitude: !secret latitude_home
+    longitude: !secret longitude_home
+    elevation: !secret elevation_home
     unit_system: metric
     time_zone: Australia/Brisbane
     customize:
@@ -48,3 +48,4 @@ sensor: !include_dir_list sensors/
 script: !include_dir_merge_named scripts/
 light: !include_dir_list lights/
 automation: !include_dir_list automations/
+zone: !include_dir_list zones/
