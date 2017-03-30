@@ -3,11 +3,7 @@ initial_state: True
 hide_entity: False
 trigger:
     - platform: state
-      entity_id: device_tracker.justin
-      from: "not_home"
-      to: "home"
-    - platform: state
-      entity_id: device_tracker.celeste
+      entity_id: group.all_devices
       from: "not_home"
       to: "home"
 condition:
