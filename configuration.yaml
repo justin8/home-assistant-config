@@ -47,3 +47,4 @@ script: !include_dir_merge_named scripts/
 light: !include_dir_list lights/
 automation: !include_dir_list automations/
 zone: !include_dir_list zones/
+notify: !include misc/notifiers.yaml
