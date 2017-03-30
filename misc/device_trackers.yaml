@@ -3,4 +3,4 @@
   track_new_devices: false
   consider_home: 600
   interval_seconds: 20
-#- platform: owntracks
+- platform: owntracks
