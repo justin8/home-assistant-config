@@ -30,9 +30,6 @@ logbook:
 sun:
 http:
     api_password: !secret api_password
-mqtt:
-    discovery: true
-    discovery_prefix: homeassistant
 recorder:
     purge_days: 28
 logger:
