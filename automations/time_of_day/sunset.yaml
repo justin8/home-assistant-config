@@ -4,7 +4,7 @@ hide_entity: False
 trigger:
     platform: sun
     event: sunset
-    offset: "-0:15:00"
+    offset: "-0:20:00"
 condition:
     - condition: state
       entity_id: group.all_devices
