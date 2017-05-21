@@ -40,9 +40,7 @@ logger:
 
 mqtt: !include misc/mqtt.yaml
 device_tracker: !include misc/device_trackers.yaml
-#shell_command: !include misc/shell_commands.yaml
-shell_command:
-  wake_ironwood: wol 54:04:a6:18:63:6d
+shell_command: !include misc/shell_commands.yaml
 media_player: !include misc/media_players.yaml
 sensor: !include_dir_list sensors/
 script: !include_dir_merge_named scripts/
