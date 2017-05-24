@@ -36,7 +36,13 @@ logger:
     default: warning
     logs:
         homeassistant.components.device_tracker.mqtt: debug
+
+# History tracking
 datadog:
+  host: abachi.dray.be
+influxdb:
+  host: abachi.dray.be
+graphite:
   host: abachi.dray.be
 
 
