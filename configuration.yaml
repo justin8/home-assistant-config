@@ -52,6 +52,7 @@ shell_command: !include misc/shell_commands.yaml
 media_player: !include misc/media_players.yaml
 sensor: !include_dir_list sensors/
 script: !include_dir_merge_named scripts/
+switch: !include_dir_list switches/
 light: !include_dir_list lights/
 automation: !include_dir_list automations/
 zone: !include_dir_list zones/
