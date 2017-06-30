@@ -1,3 +1,4 @@
 platform: wake_on_lan
 name: Ironwood
+host: ironwood
 mac_address: 54-04-a6-18-63-6d
