@@ -1,0 +1,7 @@
+name: sleep
+entities:
+  light.lounge: off
+  light.bedroom:
+    state: on
+    brightness: 120
+  media_player.samsung_tv_remote: off
