@@ -38,14 +38,6 @@ logger:
     logs:
         homeassistant.components.device_tracker.mqtt: debug
 
-# History tracking
-datadog:
-  host: abachi.dray.be
-influxdb:
-  host: abachi.dray.be
-graphite:
-  host: abachi.dray.be
-
 
 mqtt: !include misc/mqtt.yaml
 device_tracker: !include misc/device_trackers.yaml
