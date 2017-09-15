@@ -18,5 +18,4 @@ action:
           entity_id:
               - light.lounge
           brightness: 255
-          color_temp: 154
-          rgb_color: [255,255,255]
+          color_temp: 427

@@ -14,6 +14,5 @@ action:
       data:
           entity_id:
               - light.lounge
-          brightness: 200
-          color_temp: 154
-          rgb_color: [255,255,255]
+          brightness: 255
+          color_temp: 427
