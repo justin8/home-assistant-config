@@ -1,2 +1,2 @@
+# Only examples. These have been replaced by the switches
 wake_ironwood: wol 54:04:a6:18:63:6d
-wake_abachi: wol 90:2b:34:50:7b:b1

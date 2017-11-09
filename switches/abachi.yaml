@@ -1,0 +1,4 @@
+platform: wake_on_lan
+name: Abachi
+host: 192.168.1.15
+mac_address: 90-2b-34-50-7b-b1

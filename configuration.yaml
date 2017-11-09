@@ -6,10 +6,9 @@ homeassistant:
     unit_system: metric
     time_zone: Australia/Brisbane
     customize:
-        script.wake_ironwood:
+        switch.ironwood:
             emulated_hue: true
-            emulated_hue_name: Ironwood
-        script.wake_abachi:
+        switch.abachi:
             emulated_hue: true
             emulated_hue_name: Server
         media_player.samsung_tv_remote:
