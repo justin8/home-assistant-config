@@ -9,6 +9,9 @@ homeassistant:
         script.wake_ironwood:
             emulated_hue: true
             emulated_hue_name: Ironwood
+        script.wake_abachi:
+            emulated_hue: true
+            emulated_hue_name: Server
         media_player.samsung_tv_remote:
             emulated_hue: true
             emulated_hue_name: TV
