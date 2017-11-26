@@ -4,7 +4,6 @@
   interval_seconds: 2
   scan_options: "-F --host-timeout 1s"
   hosts:
-    - 192.168.1.148 # justin
+    - 192.168.1.143 # justin
 #    - 192.168.1.149 # celeste
-    - 192.168.1.248 # steamlink
 #- platform: owntracks
