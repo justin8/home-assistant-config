@@ -1,6 +1,6 @@
 - platform: samsungtv
   scan_interval: 30
   friendly_name: TV
-  host: 192.168.1.117
-  mac: 5c:49:7d:dc:35:99
+  host: 192.168.1.148
+  mac: 5C:49:7D:9A:6F:5D # wifi
   port: 8001
