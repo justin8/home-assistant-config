@@ -3,7 +3,7 @@ initial_state: True
 hide_entity: False
 trigger:
   - platform: state
-    entity_id: binary_sensor.door_window_sensor_158d0001a9a31a
+    entity_id: binary_sensor.motion_sensor_158d0001b156ed
     from: "off"
     to: "on"
 condition:
