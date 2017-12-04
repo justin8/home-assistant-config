@@ -2,10 +2,14 @@ alias: Motion Test
 initial_state: True
 hide_entity: False
 trigger:
-  - platform: state
-    entity_id: binary_sensor.motion_sensor_158d0001b156ed
-    from: "off"
-    to: "on"
+  - platform: event
+    event_type: motion
+    event_data:
+      entity_id: binary_sensor.motion_sensor_158d0001b156ed
+#  - platform: state
+#    entity_id: binary_sensor.motion_sensor_158d0001b156ed
+#    from: "off"
+#    to: "on"
 condition:
   condition: and
   conditions:
