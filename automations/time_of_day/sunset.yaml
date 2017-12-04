@@ -2,17 +2,17 @@ alias: Sunset
 initial_state: True
 hide_entity: False
 trigger:
-    platform: sun
-    event: sunset
-    offset: "-0:20:00"
+  platform: sun
+  event: sunset
+  offset: "-0:20:00"
 condition:
-    - condition: state
-      entity_id: group.all_devices
-      state: "home"
+  - condition: state
+    entity_id: group.all_devices
+    state: "home"
 action:
-    - service: light.turn_on
-      data:
-          entity_id:
-              - light.lounge
-          brightness: 255
-          color_temp: 427
+  - service: light.turn_on
+    data:
+      entity_id:
+        - light.lounge
+      brightness: 255
+      color_temp: 427
