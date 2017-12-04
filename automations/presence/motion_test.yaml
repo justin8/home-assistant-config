@@ -3,15 +3,15 @@ initial_state: True
 hide_entity: False
 trigger:
   - platform: state
-    entity_id: binary_sensor.motion_sensor_158d0001b156ed
+    entity_id: binary_sensor.door_window_sensor_158d0001a9a31a
     from: "off"
     to: "on"
 condition:
   condition: and
   conditions:
     - condition: state
-      entity_id: group.all_devices
-      state: home
+      entity_id: sun.sun
+      state: "below_horizon"
 action:
   - service: light.turn_on
     data:
