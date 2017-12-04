@@ -42,6 +42,8 @@ logger:
 
 xiaomi_aqara:
   discovery_retry: 5
+  gateways:
+    - mac: 34:CE:00:91:DA:9C
 
 mqtt: !include misc/mqtt.yaml
 device_tracker: !include misc/device_trackers.yaml
