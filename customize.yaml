@@ -1,0 +1,10 @@
+switch.ironwood:
+    emulated_hue: true
+switch.abachi:
+    emulated_hue: true
+    emulated_hue_name: Server
+media_player.samsung_tv_remote:
+    emulated_hue: true
+    emulated_hue_name: TV
+group.all_lights:
+    emulated_hue: true
