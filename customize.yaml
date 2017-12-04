@@ -4,17 +4,20 @@ switch.abachi:
   emulated_hue: true
   emulated_hue_name: Server
 switch.plug_158d0001e182af:
-  friendly_name: xiaomiplug
+  friendly_name: Plug
 binary_sensor.switch_158d0001aaadad:
-  friendly_name: xiaomiswitch
-binary_sensor.motion_sensor_158d0001b156e:
-  friendly_name: xiaomimotionsensor
-  binary_sensor.door_window_sensor_158d0001a9a31a:
-  friendly_name: xiaomidoorsensor
+  friendly_name: Switch
+binary_sensor.motion_sensor_158d0001b156ed:
+  friendly_name: Motion Sensor
+binary_sensor.door_window_sensor_158d0001a9a31a:
+  friendly_name: Door Sensor
 
 media_player.samsung_tv_remote:
+  friendly_name: TV
   emulated_hue: true
   emulated_hue_name: TV
 
+light.gateway_light_34ce0091da9c:
+  friendly_name: Night Light
 group.all_lights:
   emulated_hue: true
