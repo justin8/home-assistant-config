@@ -40,6 +40,8 @@ logger:
     logs:
         homeassistant.components.device_tracker.mqtt: debug
 
+xiaomi_aqara:
+  discovery_retry: 5
 
 mqtt: !include misc/mqtt.yaml
 device_tracker: !include misc/device_trackers.yaml
