@@ -46,7 +46,7 @@ sensor: !include_dir_list sensors/
 script: !include_dir_merge_named scripts/
 switch: !include_dir_list switches/
 light: !include_dir_list lights/
-automation: !include_dir_list automations/
+automation: !include_dir_merge_list automations/
 zone: !include_dir_list zones/
 notify: !include misc/notifiers.yaml
 scene: !include_dir_list scenes/
