@@ -34,7 +34,8 @@ sun:
 http:
     api_password: !secret api_password
 recorder:
-    purge_days: 28
+    purge_interval: 2
+    purge_keep_days: 14
 logger:
     default: warning
     logs:
