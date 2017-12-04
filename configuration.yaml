@@ -38,7 +38,7 @@ xiaomi_aqara:
     - mac: 34:CE:00:91:DA:9C
       key: !secret xiaomi_gateway_1_key
 
-mqtt: !include misc/mqtt.yaml
+#mqtt: !include misc/mqtt.yaml
 device_tracker: !include misc/device_trackers.yaml
 shell_command: !include misc/shell_commands.yaml
 media_player: !include misc/media_players.yaml
