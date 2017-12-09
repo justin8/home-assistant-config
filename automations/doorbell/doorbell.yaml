@@ -1,0 +1,27 @@
+- alias: Doorbell
+  initial_state: True
+  hide_entity: False
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001b156ed
+      from: "off"
+      to: "on"
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: binary_sensor.door_window_sensor_158d0001a9a31a
+        state: "off"
+  action:
+    - service: light.turn_on
+      data:
+        entity_id:
+          - light.lounge
+        brightness: 255
+        color_temp: 427
+#  action:
+#    - service: xiaomi_aqara.play_ringtone
+#      data:
+#        gw_mac: 34:CE:00:91:DA:9C
+#        ringtone_id: 10
+#        ringtone_vol: 90

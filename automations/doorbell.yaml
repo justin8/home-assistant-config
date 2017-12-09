@@ -1,4 +1,4 @@
-- alias: Doorbell
+- alias: Doorbell Button
   initial_state: True
   hide_entity: False
   trigger:
