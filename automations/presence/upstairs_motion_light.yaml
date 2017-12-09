@@ -1,35 +1,35 @@
-- alias: Turn on upstairs nightlight
-  initial_state: True
-  hide_entity: False
-  trigger:
-    - platform: state
-      entity_id: binary_sensor.motion_sensor_158d0001b156ed
-      from: "off"
-      to: "on"
-  condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sun.sun
-        state: "below_horizon"
-  action:
-    - service: light.turn_on
-      data:
-        entity_id:
-          - light.gateway_light_34ce0091da9c
-        brightness: 255
-
-- alias: Turn off upstairs nightlight
-  initial_state: True
-  hide_entity: False
-  trigger:
-    - platform: state
-      entity_id: binary_sensor.motion_sensor_158d0001b156ed
-      to: "off"
-      for:
-        minutes: 2
-  action:
-    - service: light.turn_off
-      data:
-        entity_id:
-          - light.gateway_light_34ce0091da9c
+#- alias: Turn on upstairs nightlight
+#  initial_state: True
+#  hide_entity: False
+#  trigger:
+#    - platform: state
+#      entity_id: binary_sensor.motion_sensor_158d0001b156ed
+#      from: "off"
+#      to: "on"
+#  condition:
+#    condition: and
+#    conditions:
+#      - condition: state
+#        entity_id: sun.sun
+#        state: "below_horizon"
+#  action:
+#    - service: light.turn_on
+#      data:
+#        entity_id:
+#          - light.gateway_light_34ce0091da9c
+#        brightness: 255
+#
+#- alias: Turn off upstairs nightlight
+#  initial_state: True
+#  hide_entity: False
+#  trigger:
+#    - platform: state
+#      entity_id: binary_sensor.motion_sensor_158d0001b156ed
+#      to: "off"
+#      for:
+#        minutes: 2
+#  action:
+#    - service: light.turn_off
+#      data:
+#        entity_id:
+#          - light.gateway_light_34ce0091da9c
