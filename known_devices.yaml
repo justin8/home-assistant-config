@@ -18,3 +18,10 @@ homeassistant_celeste:
   name: Celeste
   picture:
   track: true
+
+homeassistant_bree:
+  hide_if_away: false
+  mac: 34:08:BC:32:88:0E
+  name: Bree
+  picture:
+  track: true
