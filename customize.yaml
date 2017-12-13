@@ -19,5 +19,17 @@ media_player.samsung_tv_remote:
 
 light.gateway_light_34ce0091da9c:
   friendly_name: Night Light
+light.a60rgbw_01:
+  friendly_name: Upstairs Light
+  hidden: true
+light.a60rgbw_02:
+  friendly_name: Upper Staircase Light
+  hidden: true
+light.a60rgbw_03:
+  friendly_name: Lower Staircase Light
+  hidden: true
+light.a60rgbw_04:
+  friendly_name: Wardrobe Light
+  hidden: true
 group.all_lights:
   emulated_hue: true

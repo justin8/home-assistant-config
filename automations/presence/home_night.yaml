@@ -17,5 +17,5 @@
       data:
         entity_id:
           - light.lounge
-        brightness: 255
+        brightness_pct: 100
         color_temp: 427
