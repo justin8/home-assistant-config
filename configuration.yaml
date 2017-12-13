@@ -32,11 +32,7 @@ logger:
   logs:
     homeassistant.components.device_tracker.mqtt: debug
 
-xiaomi_aqara:
-  discovery_retry: 5
-  gateways:
-    - mac: 34:CE:00:91:DA:9C
-      key: !secret xiaomi_gateway_1_key
+xiaomi_aqara: !include misc/xiaomi_aqara.yaml
 
 #mqtt: !include misc/mqtt.yaml
 device_tracker: !include misc/device_trackers.yaml
