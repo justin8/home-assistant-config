@@ -9,12 +9,17 @@
   condition:
     condition: and
     conditions:
-      - condition: state
-        entity_id: sun.sun
-        state: "below_horizon"
       - condition: time
-        after: "10:00:00"
-        before: "23:59:59"
+        after: "7:00:00"
+        before: "22:59:59"
+      - condition: or
+        conditions:
+          - condition: numeric_state
+            entity_id: sensor.illumination_34ce0091da9c # This is the hub sensor, it seems to only update on other state changes, so is mostly useless. Try using the new motion sensor illumination value instead once it's set up
+            below: 135
+          - condition: state
+            entity_id: sun.sun
+            state: "below_horizon"
   action:
     - service: light.turn_on
       data:
@@ -35,12 +40,17 @@
   condition:
     condition: and
     conditions:
-      - condition: state
-        entity_id: sun.sun
-        state: "below_horizon"
       - condition: time
-        after: "00:00:00"
-        before: "10:00:00"
+        after: "23:00:00"
+        before: "6:59:59"
+      - condition: or
+        conditions:
+          - condition: numeric_state
+            entity_id: sensor.illumination_34ce0091da9c
+            below: 135
+          - condition: state
+            entity_id: sun.sun
+            state: "below_horizon"
   action:
     - service: light.turn_on
       data:
