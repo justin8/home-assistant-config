@@ -1,0 +1,56 @@
+- alias: Turn on wardrobe lights (Bright)
+  initial_state: True
+  hide_entity: False
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001e525c7
+      from: "off"
+      to: "on"
+  condition:
+    condition: and
+    conditions:
+      - condition: time
+        after: "7:00:00"
+        before: "22:59:59"
+  action:
+    - service: light.turn_on
+      data:
+        entity_id:
+          - light.wardrobe
+        brightness_pct: 100
+        color_temp: 339
+
+- alias: Turn on wardrobe lights (Dim)
+  initial_state: True
+  hide_entity: False
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001e525c7
+      from: "off"
+      to: "on"
+  condition:
+    condition: and
+    conditions:
+      - condition: time
+        after: "23:00:00"
+        before: "6:59:59"
+  action:
+    - service: light.turn_on
+      data:
+        entity_id:
+          - light.wardrobe
+        brightness_pct: 40
+        color_temp: 339
+
+- alias: Turn off wardrobe lights
+  initial_state: True
+  hide_entity: False
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_sensor_158d0001e525c7
+      to: "off"
+  action:
+    - service: light.turn_off
+      data:
+        entity_id:
+          - light.wardrobe
