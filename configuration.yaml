@@ -32,6 +32,11 @@ logger:
   logs:
     homeassistant.components.device_tracker.mqtt: debug
 
+influxdb:
+  host: 192.168.1.15
+  username: home_assistant
+  password: !secret influx_password
+
 xiaomi_aqara: !include misc/xiaomi_aqara.yaml
 
 #mqtt: !include misc/mqtt.yaml
