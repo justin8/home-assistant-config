@@ -3,8 +3,6 @@ switch.ironwood:
 switch.abachi:
   emulated_hue: true
   emulated_hue_name: Server
-switch.plug_158d0001e182af:
-  friendly_name: Plug
 binary_sensor.switch_158d0001aaadad:
   friendly_name: Switch
 binary_sensor.motion_sensor_158d0001b156ed:
