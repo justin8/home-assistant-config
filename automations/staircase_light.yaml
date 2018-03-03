@@ -84,6 +84,15 @@
     - platform: state
       entity_id: binary_sensor.motion_sensor_158d0001ab31bb
       to: "off"
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: binary_sensor.motion_sensor_158d0001b156ed
+        state: "off"
+      - condition: state
+        entity_id: binary_sensor.motion_sensor_158d0001ab31bb
+        state: "off"
   action:
     - service: light.turn_off
       data:
