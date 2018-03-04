@@ -4,7 +4,7 @@ hide_entity: False
 trigger:
   platform: sun
   event: sunset
-  offset: "-0:20:00"
+  offset: "-1:00:00"
 condition:
   - condition: state
     entity_id: group.all_devices
@@ -14,5 +14,5 @@ action:
     data:
       entity_id:
         - light.lounge
-      brightness: 255
+      brightness_pct: 100
       color_temp: 427
