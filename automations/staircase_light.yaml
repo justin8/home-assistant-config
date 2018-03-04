@@ -20,10 +20,10 @@
         conditions:
           - condition: numeric_state
             entity_id: sensor.illumination_34ce0091da9c
-            below: 135 # Lumens
+            below: 350 # Lumens
           - condition: numeric_state
             entity_id: sensor.illumination_158d0001ab31bb
-            below: 10 # Lux
+            below: 40 # Lux
           - condition: state
             entity_id: sun.sun
             state: "below_horizon"
@@ -58,10 +58,10 @@
         conditions:
           - condition: numeric_state
             entity_id: sensor.illumination_34ce0091da9c
-            below: 165 # Lumens
+            below: 350 # Lumens
           - condition: numeric_state
             entity_id: sensor.illumination_158d0001ab31bb
-            below: 20 # Lux
+            below: 40 # Lux
           - condition: state
             entity_id: sun.sun
             state: "below_horizon"
