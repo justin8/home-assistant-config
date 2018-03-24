@@ -25,3 +25,4 @@ emulated_hue_ids.json
 secrets.yaml
 deps
 mosquitto.conf
+mosquitto.passwd
