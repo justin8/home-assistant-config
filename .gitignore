@@ -24,3 +24,4 @@ home-assistant_v2.db
 emulated_hue_ids.json
 secrets.yaml
 deps
+mosquitto.conf
