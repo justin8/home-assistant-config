@@ -13,3 +13,16 @@
 #        gw_mac: 34:CE:00:91:DA:9C
 #        ringtone_id: 10
 #        ringtone_vol: 90
+
+- alias: Doorbell ringing
+  initial_state: True
+  trigger:
+    platform: mqtt
+    topic: home/doorbell
+    payload: 'on'
+  action:
+    - service: xiaomi_aqara.play_ringtone
+      data:
+        gw_mac: 34:CE:00:91:DA:9C
+        ringtone_id: 10
+        ringtone_vol: 90
