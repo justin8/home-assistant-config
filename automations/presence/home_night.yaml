@@ -1,21 +1,21 @@
-- alias: Home Night
-  initial_state: True
-  hide_entity: False
-  trigger:
-    - platform: state
-      entity_id: group.all_devices
-      from: "not_home"
-      to: "home"
-  condition:
-    condition: and
-    conditions:
-      - condition: state
-        entity_id: sun.sun
-        state: "below_horizon"
-  action:
-    - service: light.turn_on
-      data:
-        entity_id:
-          - light.lounge
-        brightness_pct: 100
-        color_temp: 427
+#- alias: Home Night
+#  initial_state: True
+#  hide_entity: False
+#  trigger:
+#    - platform: state
+#      entity_id: group.all_devices
+#      from: "not_home"
+#      to: "home"
+#  condition:
+#    condition: and
+#    conditions:
+#      - condition: state
+#        entity_id: sun.sun
+#        state: "below_horizon"
+#  action:
+#    - service: light.turn_on
+#      data:
+#        entity_id:
+#          - light.lounge
+#        brightness_pct: 100
+#        color_temp: 427
