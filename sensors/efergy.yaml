@@ -1,0 +1,10 @@
+platform: efergy
+app_token: !secret efergy_token
+utc_offset: 600
+monitored_variables:
+  - type: instant_readings
+  - type: cost
+    period: day
+    currency: $
+  - type: amount
+    period: day
