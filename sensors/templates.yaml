@@ -1,0 +1,6 @@
+platform: template
+sensors:
+  office_power:
+    friendly_name: "Office Power"
+    unit_of_measurement: "Watts"
+    value_template: "{{ state_attr('switch.office_power', 'load_power') }}"

@@ -7,48 +7,63 @@ homeassistant:
   time_zone: Australia/Brisbane
   customize: !include customize.yaml
 
-emulated_hue:
-  expose_by_default: true
-  listen_port: 80
-  exposed_domains:
-    - light
-    - scene
+http:
+  api_password: G20REbaPlav02w3TBdge
+  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+  # base_url: hass.dray.id.au
+
+recorder:
+  purge_interval: 2
+  purge_keep_days: 14
+
+#discovery:
+updater:
+frontend:
+config:
+conversation:
+history:
+logbook:
+map:
+sun:
+
+#tts:
+#  - platform: google
+
+#logger:
+#  default: info
+#  logs:
+#    aiounifi: debug
+#    homeassistant.components.unifi: debug
+#    homeassistant.components.switch.unifi: debug
+
+
+panel_iframe:
+  nodered_flows:
+    title: 'Node-RED Flows'
+    url: 'https://node-red.dray.id.au'
+    icon: mdi:nodejs
 
 ifttt:
   key: !secret ifttt_key
 
-frontend:
-conversation:
-history:
-logbook:
-sun:
-http:
-  api_password: !secret api_password
-recorder:
-  purge_interval: 2
-  purge_keep_days: 14
-logger:
-  default: warning
-  logs:
-    homeassistant.components.device_tracker.mqtt: debug
+input_boolean:
+  automations:
+    name: Automations
+    initial: on
+    icon: mdi:house 
 
-influxdb:
-  host: 192.168.1.15
-  username: home_assistant
-  password: !secret influx_password
-
+#zha: !include misc/zha.yaml
 xiaomi_aqara: !include misc/xiaomi_aqara.yaml
-
-mqtt: !include misc/mqtt.yaml
-device_tracker: !include misc/device_trackers.yaml
-shell_command: !include misc/shell_commands.yaml
-media_player: !include misc/media_players.yaml
+influxdb: !include misc/influxdb.yaml
+alexa: !include misc/alexa.yaml
+group: !include groups.yaml
+script: !include scripts.yaml
 sensor: !include_dir_list sensors/
-script: !include_dir_merge_named scripts/
+mqtt: !include misc/mqtt.yaml
 switch: !include_dir_list switches/
 light: !include_dir_list lights/
-automation: !include_dir_merge_list automations/
-zone: !include_dir_list zones/
-notify: !include misc/notifiers.yaml
-scene: !include_dir_list scenes/
-#group: !include group.yaml
+#automation: !include_dir_merge_list automations/
+automation: !include automations.yaml
+notify: !include_dir_list notify/
+hue: !include hue.yaml
+cover: !include_dir_list covers/

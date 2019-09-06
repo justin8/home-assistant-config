@@ -1,0 +1,116 @@
+{
+    "data": {
+        "config": {
+            "title": "Home",
+            "views": [
+                {
+                    "badges": [
+                        "binary_sensor.motion_sensor_lower_staircase",
+                        "binary_sensor.motion_sensor_upper_staircase",
+                        "binary_sensor.motion_sensor_kitchen",
+                        "binary_sensor.motion_sensor_wardrobe",
+                        "binary_sensor.door_window_sensor_front_door",
+                        "binary_sensor.motion_sensor_office",
+                        "binary_sensor.garage_switch",
+                        "sensor.bom_weather",
+                        "sensor.bom_air_temp_c",
+                        "sensor.bom_cloud",
+                        "sensor.bom_station_name",
+                        "sensor.illumination_lower_staircase",
+                        "sensor.illumination_xiaomi_gateway",
+                        "sensor.illumination_wardrobe",
+                        "sensor.illumination_office",
+                        "sensor.illumination_kitchen",
+                        "sun.sun"
+                    ],
+                    "cards": [
+                        {
+                            "entities": [
+                                "light.lounge_standing",
+                                "light.lounge_shelf"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Lounge",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.stove_lights"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Kitchen",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.master_bedroom"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Master Bedroom",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.guest_room_right",
+                                "light.guest_room_left"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Guest Bedroom",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.upper_landing",
+                                "light.upper_staircase",
+                                "light.lower_staircase"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Staircase",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "switch.office_power",
+                                "switch.ironwood"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Office",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.wardrobe"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Wardrobe",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "light.gateway_light",
+                                "cover.garage_door",
+                                "switch.gateway_power",
+                                "switch.abachi"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Garage",
+                            "type": "entities"
+                        },
+                        {
+                            "entities": [
+                                "input_boolean.automations"
+                            ],
+                            "show_header_toggle": true,
+                            "title": "Miscellaneous",
+                            "type": "entities"
+                        }
+                    ],
+                    "path": "default_view",
+                    "title": "Home"
+                }
+            ]
+        }
+    },
+    "key": "lovelace",
+    "version": 1
+}

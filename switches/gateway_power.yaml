@@ -1,0 +1,5 @@
+platform: xiaomi_miio
+name: Gateway Power
+host: 192.168.1.232
+token: !secret gateway_power_token
+model: chuangmi.plug.m1

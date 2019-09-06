@@ -1,0 +1,14 @@
+smart_home:
+  filter:
+    include_entities:
+      - light.lounge_standing
+      - light.lounge_shelf
+      - light.master_bedroom
+      - light.guest_room_left
+      - light.guest_room_right
+      - light.upper_landing
+      - light.upper_staircase
+      - light.lower_staircase
+      - light.wardrobe
+      - switch.stove_lights
+      - input_boolean.automations

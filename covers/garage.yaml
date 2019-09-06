@@ -1,0 +1,5 @@
+platform: mqtt
+name: "Garage Door"
+state_topic: "garage/door/1/status"
+command_topic: "garage/door/1/action"
+availability_topic: "GarHAge/availability"

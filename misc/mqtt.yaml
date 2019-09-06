@@ -1,5 +1,5 @@
 discovery: true
 discovery_prefix: homeassistant
-broker: 127.0.0.1
+broker: mqtt.dray.id.au
 username: homeassistant
 password: !secret mqtt_password

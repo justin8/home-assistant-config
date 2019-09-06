@@ -1,0 +1,56 @@
+lounge:
+  name: Lounge
+  entities:
+    - light.lounge_standing
+    - light.lounge_shelf
+    - binary_sensor.front_door
+kitchen:
+  name: Kitchen
+  entities:
+    - switch.stove_lights
+    - binary_sensor.motion_sensor_kitchen
+    - sensor.illumination_kitchen
+master_bedroom:
+  name: Master Bedroom
+  entities:
+    - light.master_bedroom
+guest_bedroom:
+  name: Guest Bedroom
+  entities:
+    - light.guest_room_right
+    - light.guest_room_left
+staircase:
+  name: Staircase
+  entities:
+    - light.upper_landing
+    - light.upper_staircase
+    - light.lower_staircase
+    - binary_sensor.motion_sensor_lower_staircase
+    - binary_sensor.motion_sensor_upper_staircase
+    - sensor.illumination_lower_staircase 
+office:
+  name: Office
+  entities:
+    - switch.office_power
+    - switch.ironwood
+    - binary_sensor.motion_sensor_office
+    - sensor.illumination_office 
+wardrobe:
+  name: Wardrobe
+  entities:
+    - light.wardrobe
+    - sensor.illumination_wardrobe 
+    - binary_sensor.motion_sensor_wardrobe 
+garage:
+  name: Garage
+  entities:
+    - light.gateway_light
+    - cover.garage_door
+    - switch.gateway_power
+    - switch.abachi
+    - sensor.illumination_xiaomi_gateway 
+    - binary_sensor.garage_switch
+misc:
+  name: Miscellaneous
+  entities:
+    - input_boolean.automations

@@ -1,6 +1,0 @@
-- platform: samsungtv
-  scan_interval: 30
-  friendly_name: TV
-  host: 192.168.1.117
-  mac: 5C:49:7D:DC:35:99 # ethernet
-  port: 8001

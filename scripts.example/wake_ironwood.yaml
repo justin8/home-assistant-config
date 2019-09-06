@@ -1,4 +1,0 @@
-wake_ironwood:
-    alias: ironwood
-    sequence:
-        - service: shell_command.wake_ironwwod

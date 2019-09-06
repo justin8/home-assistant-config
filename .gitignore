@@ -26,3 +26,9 @@ secrets.yaml
 deps
 mosquitto.conf
 mosquitto.passwd
+
+# Ignore folders.
+.storage
+.cloud
+.google.token
+zigbee.db
