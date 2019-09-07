@@ -6,7 +6,7 @@ phases:
       python: 3.7
   pre_build:
     commands:
-      - aws ssm get-parameter --name home-assistant-secrets| jq -r .Parameter.Value > secrets.yaml
+      - ./manage-secrets pull
       - docker pull homeassistant/home-assistant
   build:
     commands:
