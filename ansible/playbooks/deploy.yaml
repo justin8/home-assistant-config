@@ -1,0 +1,7 @@
+---
+- hosts: abachi*
+  tasks:
+    - name: Test
+      file:
+        path: /tmp/foobar
+        mode: "1777"
