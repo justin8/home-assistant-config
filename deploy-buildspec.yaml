@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+  pre_build:
+    commands:
+      - mkdir -p ~/.ssh
+      - aws ssm get-parameter --name deployment-key | jq -r .Parameter.Value > ~/.ssh/id_rsa
+      - chmod 0700 ~/.ssh
+      - chmod 0600 ~/.ssh/id_rsa
+      - pip install -r deploy-requirements.txt
+  build:
+    commands:
+      - cd ansible
+      - ls -l
+      - ansible-playbook -v playbooks/deploy.yaml
