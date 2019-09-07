@@ -7,7 +7,7 @@ phases:
   pre_build:
     commands:
       - aws ssm get-parameter --name home-assistant-secrets| jq -r .Parameter.Value > secrets.yaml
-      - pip install -r test-requirements.txt
+      - docker pull homeassistant/home-assistant
   build:
     commands:
-      - hass --script check_config -c $PWD
+      - docker run -v $PWD:/config homeassistant/home-assistant python -m homeassistant --script check_config -c /config
